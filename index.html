@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hafiz Mubashir Sikander | Portfolio</title>
+  <meta name="description" content="Portfolio of Hafiz Mubashir Sikander, Flutter Developer and Mobile App Developer." />
+  <link rel="icon" href="assets/icons/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="ambient"><span></span><span></span><span></span></div>
+
+  <header class="site-header" data-reveal>
+    <nav class="navbar container">
+      <a class="brand magnetic" href="#home">Mubashir Portfolio</a>
+      <button class="menu-btn" aria-label="Open Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container section">
+      <div class="hero-content" data-reveal>
+        <span class="status-pill"><i></i> Available for Work</span>
+        <h1 class="hero-title">Hi, I'm <br><strong>Hafiz Mubashir Sikander</strong></h1>
+        <h2><span id="typed-role"></span></h2>
+        <p>I build scalable Flutter mobile apps with clean UI, secure authentication, REST API integration, Firebase, offline support, and role-based app systems.</p>
+        <div class="hero-actions">
+          <a class="btn primary magnetic" href="#contact">Contact Me <span>→</span></a>
+          <a class="btn ghost magnetic glow-btn" href="#projects">View Projects</a>
+          <a class="btn ghost magnetic resume-btn" href="assets/resume/Hafiz-Mubashir-Sikander-Resume.pdf" download>Download Resume</a>
+        </div>
+        <div class="socials">
+          <a class="magnetic social-btn" href="https://www.linkedin.com/in/itz-mubashir1009" target="_blank" rel="noopener" aria-label="LinkedIn"><span>in</span></a>
+          <a class="magnetic social-btn" href="https://github.com/MubashirSikander" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A12 12 0 0 0 8.2 23.9c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.6 2.1 3.4 1.5.1-.7.4-1.2.7-1.5-2.6-.3-5.4-1.3-5.4-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.7.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg></a>
+          <a class="magnetic social-btn" href="https://instagram.com/itz_mubashir1009" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm8.7 2.2a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6ZM12 7.2a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Zm0 2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Z"/></svg></a>
+        </div>
+      </div>
+      <div class="hero-visual" data-reveal>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="image-ring magnetic">
+          <img src="assets/images/coding-workspace.svg" alt="Coding workspace illustration">
+          <span class="dev-icon">⌘</span>
+          <span class="float-badge badge-one">Flutter</span>
+          <span class="float-badge badge-two">Firebase</span>
+          <span class="float-badge badge-three">REST APIs</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="motion-rail container" aria-label="Portfolio highlights" data-reveal>
+      <div class="rail-copy">
+        <small class="section-kicker">Portfolio Showcase</small>
+        <h2>Flutter apps, real projects, and clean product work.</h2>
+      </div>
+      <div class="rail-mask">
+        <div class="rail-track">
+          <article class="rail-card glass"><span>01</span><b>Mobile UI</b><small>Modern Flutter screens with clean layouts</small></article>
+          <article class="rail-card glass"><span>02</span><b>Secure Apps</b><small>Firebase auth, Firestore, and user roles</small></article>
+          <article class="rail-card glass"><span>03</span><b>API Work</b><small>Dio, sessions, errors, and clean responses</small></article>
+          <article class="rail-card glass"><span>04</span><b>Offline First</b><small>Hive storage, cache, and sync flows</small></article>
+          <article class="rail-card glass"><span>05</span><b>Release Ready</b><small>Self QA, bug fixes, and store builds</small></article>
+          <article class="rail-card glass"><span>01</span><b>Mobile UI</b><small>Modern Flutter screens with clean layouts</small></article>
+          <article class="rail-card glass"><span>02</span><b>Secure Apps</b><small>Firebase auth, Firestore, and user roles</small></article>
+          <article class="rail-card glass"><span>03</span><b>API Work</b><small>Dio, sessions, errors, and clean responses</small></article>
+          <article class="rail-card glass"><span>04</span><b>Offline First</b><small>Hive storage, cache, and sync flows</small></article>
+          <article class="rail-card glass"><span>05</span><b>Release Ready</b><small>Self QA, bug fixes, and store builds</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section about about-showcase">
+      <div class="section-head" data-reveal>
+        <small class="section-kicker">My Introduction</small>
+        <h2>About Me</h2><span></span>
+      </div>
+
+      <div class="about-showcase-card" data-reveal>
+        <div class="about-portrait-side">
+          <div class="about-portrait-card glass">
+            <img src="assets/images/mubashir-profile.jpg" alt="Hafiz Mubashir Sikander profile photo">
+          </div>
+          <div class="about-orbit-dot dot-a"></div>
+          <div class="about-orbit-dot dot-b"></div>
+        </div>
+
+        <div class="about-content-side">
+          <div class="about-stats-row">
+            <article class="about-mini-card glass">
+              <span class="card-icon">⌛</span>
+              <b>1+ Years</b>
+              <small>Experience</small>
+            </article>
+            <article class="about-mini-card glass">
+              <span class="card-icon">✓</span>
+              <b>4+ Projects</b>
+              <small>Completed</small>
+            </article>
+            <article class="about-mini-card glass">
+              <span class="card-icon">↗</span>
+              <b>Store Apps</b>
+              <small>Deployed</small>
+            </article>
+          </div>
+
+          <div class="about-text-card glass">
+            <span class="mini-label">Flutter Developer</span>
+            <p>I build scalable Flutter mobile apps with clean UI, secure authentication, REST API integration, Firebase, offline support, and role-based app systems.</p>
+            <p>I focus on clean screens, stable logic, debugging, and real business use cases. My strength is turning rough requirements into usable mobile app flows.</p>
+            <a class="btn primary about-contact-btn" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="container section skills-section">
+      <div class="section-head skills-head" data-reveal>
+        <h2>Skills</h2><span></span>
+      </div>
+      <div class="skills-cloud" data-reveal>
+        <div class="skill-marquee">
+          <div class="skill-row row-one">
+            <button>Flutter</button><button>Dart</button><button>Firebase</button><button>GetX</button><button>Riverpod</button><button>Hive</button><button>Dio</button>
+            <button>Flutter</button><button>Dart</button><button>Firebase</button><button>GetX</button><button>Riverpod</button><button>Hive</button><button>Dio</button>
+          </div>
+        </div>
+        <div class="skill-marquee">
+          <div class="skill-row row-two">
+            <button>REST APIs</button><button>SQLite</button><button>MySQL</button><button>Shared Preferences</button><button>Firebase Auth</button><button>Firestore</button><button>Realtime Database</button>
+            <button>REST APIs</button><button>SQLite</button><button>MySQL</button><button>Shared Preferences</button><button>Firebase Auth</button><button>Firestore</button><button>Realtime Database</button>
+          </div>
+        </div>
+        <div class="skill-marquee">
+          <div class="skill-row row-three">
+            <button>GitHub</button><button>Android Studio</button><button>VS Code</button><button>Kotlin</button><button>Java</button><button>C#</button><button>C++</button><button>Clean Architecture</button><button>Offline First Apps</button>
+            <button>GitHub</button><button>Android Studio</button><button>VS Code</button><button>Kotlin</button><button>Java</button><button>C#</button><button>C++</button><button>Clean Architecture</button><button>Offline First Apps</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="container section">
+      <div class="section-head" data-reveal><h2>Professional Experience</h2><span></span></div>
+      <div class="experience-stack">
+        <div class="timeline-card glass" data-reveal>
+          <div class="timeline-dot"></div>
+          <h3>Flutter Developer</h3>
+          <p class="muted">Virtuenetz Pakistan, Software Company</p>
+          <ul>
+            <li>Designed and developed real-world Flutter mobile applications.</li>
+            <li>Integrated Firebase, Firestore, Realtime Database, and Authentication.</li>
+            <li>Worked with REST APIs using Dio and secure session handling.</li>
+            <li>Collaborated with designers, QA team, and backend developers.</li>
+            <li>Improved app stability, performance, UI quality, and production readiness.</li>
+          </ul>
+        </div>
+        <div class="timeline-card glass internship-card" data-reveal>
+          <div class="timeline-dot"></div>
+          <h3>Flutter Developer Internship</h3>
+          <p class="muted">Virtuenetz Pakistan · Apr 2025 - Jul 2025 · 4 months</p>
+          <p class="experience-desc">During my 3-month internship at VirtueNetz, I gained hands-on experience in mobile application development using Flutter, Dart, and Firebase. I independently designed and developed multiple projects from scratch, including a dynamic Music Player App, a fully functional ToDo App with Firestore integration, and a Task Management System featuring user role-based navigation, Firebase backend, and GetX state management. I focused on clean code, REST APIs, polished UI/UX, scalable app architecture, real-time data handling, and team collaboration.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <div class="section-head" data-reveal><h2>Selected Projects</h2><span></span></div>
+      <div class="project-grid">
+        <article class="project-card glass" data-reveal>
+          <div class="mockup phone"><span>ERP App</span></div>
+          <h3>United Ceres College</h3><small>Education & Agent Management ERP</small><p>Role-based ERP mobile app with student, parent, teacher, and agent portals.</p><div><b>Flutter</b><b>Dart</b><b>GetX</b><b>Firebase</b></div>
+          <button class="project-details-btn" data-project="0">View Details →</button>
+        </article>
+        <article class="project-card glass" data-reveal>
+          <div class="mockup phone"><span>Marketplace</span></div>
+          <h3>Petiggo</h3><small>Pet Food Marketplace</small><p>E-commerce app with product browsing, cart handling, banners, and API based data.</p><div><b>Flutter</b><b>GetX</b><b>Dio</b><b>Firebase</b></div>
+          <button class="project-details-btn" data-project="1">View Details →</button>
+        </article>
+        <article class="project-card glass" data-reveal>
+          <div class="mockup tablet"><span>Survey App</span></div>
+          <h3>Technician ID</h3><small>Horse Survey Management</small><p>Offline-first tablet app for field technicians with sync and local data storage.</p><div><b>Flutter</b><b>Hive DB</b><b>REST APIs</b></div>
+          <button class="project-details-btn" data-project="2">View Details →</button>
+        </article>
+        <article class="project-card glass" data-reveal>
+          <div class="mockup phone"><span>Assets</span></div>
+          <h3>NKCC App</h3><small>Asset Management</small><p>Internal app for tracking assets with employee, supervisor, and HR roles.</p><div><b>Flutter</b><b>Clean Architecture</b><b>Firebase</b></div>
+          <button class="project-details-btn" data-project="3">View Details →</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="container section">
+      <div class="section-head" data-reveal><h2>Education</h2><span></span></div>
+      <div class="education-timeline">
+        <div class="edu-line"></div>
+        <div class="education-card glass edu-left" data-reveal>
+          <div><h3>Bachelor of Science in Computer Science</h3><p>Khwaja Fareed University of Engineering and Information Technology</p></div><b>Sep 2022 - Jul 2026</b>
+        </div>
+        <div class="education-card glass edu-right" data-reveal>
+          <div><h3>ICS</h3><p>Doctors Post Graduate College, Rahim Yar Khan</p></div><b>2020 - 2022</b>
+        </div>
+        <div class="education-card glass edu-left" data-reveal>
+          <div><h3>Matric</h3><p>Doctors Public School, Rahim Yar Khan</p></div><b>2018 - 2020</b>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section offer">
+      <div class="section-head" data-reveal><h2>What I Offer</h2><span></span></div>
+      <div class="offer-grid">
+        <article data-reveal><span class="card-icon">📱</span><p>Flutter App Development</p></article>
+        <article data-reveal><span class="card-icon">🔥</span><p>Firebase Integration</p></article>
+        <article data-reveal><span class="card-icon">🔗</span><p>REST API Integration</p></article>
+        <article data-reveal><span class="card-icon">🎨</span><p>UI Implementation</p></article>
+        <article data-reveal><span class="card-icon">🛠️</span><p>Bug Fixing & Maintenance</p></article>
+        <article data-reveal><span class="card-icon">⚡</span><p>App Performance Optimization</p></article>
+        <article data-reveal><span class="card-icon">🏗️</span><p>Clean Architecture App Development</p></article>
+        <article data-reveal><span class="card-icon">📶</span><p>Offline-First App Development</p></article>
+      </div>
+    </section>
+
+    <section class="container section achievements">
+      <div class="section-head" data-reveal><h2>Achievements</h2><span></span></div>
+      <div class="achievement-grid">
+        <article class="glass" data-reveal><span class="card-icon">🌟</span><p>Rising Star of the Year 2026 at Virtuenetz Pakistan</p></article>
+        <article class="glass" data-reveal><span class="card-icon">🏆</span><p>1st Position in FYP at KFUEIT Career Fair & Project Expo 2026</p></article>
+        <article class="glass" data-reveal><span class="card-icon">🚀</span><p>Built and contributed to production-ready mobile apps</p></article>
+        <article class="glass" data-reveal><span class="card-icon">🛒</span><p>Worked on apps deployed to Play Store and App Store</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section section">
+      <div class="contact-wave"></div>
+      <div class="container contact-wrap">
+        <div class="contact-info" data-reveal>
+          <h2>Get in touch</h2>
+          <h3>Email</h3><a href="mailto:muhammad.mubashir.sikander@gmail.com">muhammad.mubashir.sikander@gmail.com</a>
+          <h3>Location</h3><p>Rahim Yar Khan, Pakistan</p>
+          <h3>Available For</h3><p>Flutter mobile app development, UI implementation, and API integration work.</p>
+        </div>
+        <form class="contact-form glass" data-reveal>
+          <div class="form-row"><label>First name<input type="text" placeholder="Type first name"></label><label>Last name<input type="text" placeholder="Type last name"></label></div>
+          <label>Email<input type="email" placeholder="Type email address"></label>
+          <label>Message<textarea placeholder="Type your message"></textarea></label>
+          <button class="btn primary magnetic" type="submit">Send Message →</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <b>Mubashir Portfolio</b><p>© 2026 Hafiz Mubashir Sikander. Built with HTML, CSS and JavaScript.</p><div><a href="https://www.linkedin.com/in/itz-mubashir1009" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/MubashirSikander" target="_blank" rel="noopener">GitHub</a><a href="https://instagram.com/itz_mubashir1009" target="_blank" rel="noopener">Instagram</a><a href="mailto:muhammad.mubashir.sikander@gmail.com">Email</a></div>
+  </footer>
+
+  <a href="#home" class="back-to-top magnetic" aria-label="Go to top">↑</a>
+
+
+  <div class="project-modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card glass">
+      <button class="modal-close" aria-label="Close project details">×</button>
+      <h2 id="modal-title">Project Title</h2>
+      <p id="modal-subtitle" class="muted"></p>
+      <p id="modal-desc"></p>
+      <ul id="modal-points"></ul>
+      <div class="modal-links">
+        <a class="btn primary" href="#" target="_blank">Play Store</a>
+        <a class="btn ghost" href="#" target="_blank">App Store</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
