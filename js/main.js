@@ -12,7 +12,7 @@ for (const el of document.querySelectorAll('.magnetic')) {
 }
 
 // Typewriter
-const roles = ['Flutter Developer', 'Mobile App Developer', 'UI Focused Developer', 'Firebase App Developer'];
+const roles = ['Mobile App Developer', ];
 const typed = document.getElementById('typed-role');
 let roleIndex = 0, charIndex = 0, deleting = false;
 function typeRole() {
