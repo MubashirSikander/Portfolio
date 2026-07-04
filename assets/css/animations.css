@@ -1,0 +1,120 @@
+/* ============================================================
+   ANIMATIONS — keyframes + reveal/utility classes
+   All respect prefers-reduced-motion (see @media block at bottom)
+   ============================================================ */
+
+@keyframes float-bob{
+  0%,100%{ transform: translateY(0) rotate(var(--chip-rot, 0deg)); }
+  50%{ transform: translateY(-10px) rotate(var(--chip-rot, 0deg)); }
+}
+
+@keyframes caret-blink{
+  0%,49%{ opacity:1; }
+  50%,100%{ opacity:0; }
+}
+
+@keyframes ticker-scroll{
+  from{ transform:translateX(0); }
+  to{ transform:translateX(-50%); }
+}
+
+@keyframes glow-drift{
+  0%,100%{ transform:translate(0,0) scale(1); }
+  50%{ transform:translate(30px,-20px) scale(1.06); }
+}
+.glow{ animation:glow-drift 18s ease-in-out infinite; }
+.glow-violet{ animation-duration:22s; animation-delay:-4s; }
+
+@keyframes pulse-ring{
+  0%{ box-shadow:0 0 0 6px rgba(34,197,94,.14),0 0 24px 2px rgba(34,197,94,.6); }
+  50%{ box-shadow:0 0 0 10px rgba(234,179,8,.22),0 0 32px 6px rgba(234,179,8,.7); }
+  100%{ box-shadow:0 0 0 6px rgba(34,197,94,.14),0 0 24px 2px rgba(34,197,94,.6); }
+}
+.tl-dot.is-visible{ animation:pulse-ring 2.6s ease-in-out infinite; }
+
+@keyframes dot-pulse{
+  0%,100%{ box-shadow:0 0 8px 1px currentColor; transform:scale(1); }
+  50%{ box-shadow:0 0 18px 5px currentColor; transform:scale(1.15); }
+}
+.eyebrow .dot{ color:var(--accent); animation:dot-pulse 2s ease-in-out infinite; }
+
+/* animated gradient shimmer for gradient text everywhere it's used */
+@keyframes grad-shift{
+  0%,100%{ background-position:0% 50%; }
+  50%{ background-position:100% 50%; }
+}
+.grad-text,.stat-item .num{
+  background-size:200% auto;
+  animation:grad-shift 6s ease-in-out infinite;
+}
+
+/* pause the floating hero chips on hover so they're easy to read, with a soft pop */
+.float-chip{ transition:filter var(--dur-fast) var(--ease-out); }
+.float-chip:hover{ animation-play-state:paused; filter:brightness(1.15) drop-shadow(0 0 14px rgba(234,179,8,.5)); }
+
+@keyframes fade-in-up{
+  from{ opacity:0; transform:translateY(28px); }
+  to{ opacity:1; transform:translateY(0); }
+}
+@keyframes fade-in{
+  from{ opacity:0; }
+  to{ opacity:1; }
+}
+
+/* Scroll-reveal is opt-in progressive enhancement: [data-reveal] elements are
+   fully visible by default. Only once `main.js` confirms JS actually ran does
+   the `.js` class land on <html> (see the inline script in <head>), which is
+   the ONLY thing that switches these elements to their pre-reveal hidden
+   state. This guarantees content is never invisible for no-JS visitors, and
+   reveal.js additionally force-reveals everything after a short timeout as a
+   safety net against any IntersectionObserver edge case. */
+.js [data-reveal]{
+  opacity:0; transform:translateY(28px);
+  transition:opacity var(--dur-slow) var(--ease-out), transform var(--dur-slow) var(--ease-out);
+}
+.js [data-reveal].is-visible{ opacity:1; transform:translateY(0); }
+
+/* staggered children: JS sets --reveal-index; CSS turns it into a delay */
+[data-reveal-group] > [data-reveal]{
+  transition-delay: calc(var(--reveal-index, 0) * 80ms);
+}
+
+/* particles layer (decorative, aria-hidden) */
+.particles{ position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.particle{
+  position:absolute; width:3px; height:3px; border-radius:50%;
+  background:rgba(255,255,255,.5); filter:blur(.5px);
+  animation:particle-drift linear infinite;
+}
+@keyframes particle-drift{
+  from{ transform:translateY(0) translateX(0); opacity:0; }
+  10%{ opacity:.7; }
+  90%{ opacity:.5; }
+  to{ transform:translateY(-140px) translateX(20px); opacity:0; }
+}
+
+/* mouse follower */
+.mouse-follower{
+  position:fixed; top:0; left:0; width:26px; height:26px; border-radius:50%;
+  background:radial-gradient(circle,rgba(74,222,128,.6),transparent 70%);
+  pointer-events:none; z-index:999; mix-blend-mode:screen;
+  transform:translate(-50%,-50%);
+  transition:opacity var(--dur-fast) var(--ease-out);
+  opacity:0;
+}
+.mouse-follower.is-active{ opacity:1; }
+
+/* page transition */
+body.is-leaving{ animation:fade-out var(--dur-med) var(--ease-out) forwards; }
+body.is-entering{ animation:fade-in var(--dur-med) var(--ease-out) both; }
+@keyframes fade-out{ to{ opacity:0; } }
+
+/* number counter target just needs the reveal treatment; JS mutates textContent */
+
+@media (prefers-reduced-motion: reduce){
+  .float-chip,.glow,.tl-dot.is-visible,.particle,.hero-role .caret,.eyebrow .dot,.grad-text,.stat-item .num{ animation:none !important; }
+  .ticker-track{ animation:none !important; }
+  [data-reveal]{ opacity:1 !important; transform:none !important; transition:none !important; }
+  .mouse-follower{ display:none !important; }
+  .btn:hover,.card:hover,.stat-item:hover,.portrait-frame:hover,.proj-card:hover{ transform:none; }
+}

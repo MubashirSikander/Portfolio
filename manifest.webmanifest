@@ -1,0 +1,14 @@
+{
+  "name": "Mubashir Sikander | Flutter Developer Portfolio",
+  "short_name": "Mubashir Sikander",
+  "description": "Flutter Developer from Pakistan specializing in cross-platform Android and iOS applications.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#050a06",
+  "theme_color": "#050a06",
+  "icons": [
+    { "src": "assets/images/favicon/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "assets/images/favicon/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

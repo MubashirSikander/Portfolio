@@ -1,0 +1,69 @@
+/* ============================================================
+   DESIGN TOKENS — green / black / yellow theme
+   ============================================================ */
+:root{
+  /* surfaces */
+  --bg:#050a06;
+  --bg-1:#070f08;
+  --bg-2:#0a140a;
+  --card:#0A140D;
+  --card-2:#0D1912;
+  --card-border:rgba(132,204,22,0.16);
+  --glass:rgba(10,20,14,0.55);
+  --glass-border:rgba(220,255,220,0.14);
+
+  /* accents */
+  --accent:#22C55E;
+  --accent-2:#EAB308;
+  --accent-3:#4ADE80;
+  --pink:#FACC15;
+
+  /* text */
+  --text:#F6FBF6;
+  --text-soft:#AFC2B4;
+  --text-dim:#647566;
+
+  /* status */
+  --success:#34D399;
+  --success-text:#6EE7B7;
+  --warning:#FBBF24;
+  --warning-text:#FCD34D;
+  --danger:#F87171;
+
+  /* gradients */
+  --grad-main:linear-gradient(135deg,#22C55E 0%,#EAB308 100%);
+  --grad-main-2:linear-gradient(120deg,#4ADE80 0%,#22C55E 45%,#EAB308 100%);
+  --grad-warm:linear-gradient(135deg,#EAB308 0%,#FACC15 100%);
+
+  /* elevation */
+  --shadow-lg:0 30px 80px -20px rgba(0,0,0,0.65);
+  --shadow-glow:0 0 60px -10px rgba(34,197,94,0.4);
+
+  /* spacing scale (8px base) */
+  --sp-1:8px; --sp-2:12px; --sp-3:16px; --sp-4:20px; --sp-5:24px; --sp-6:32px; --sp-7:40px;
+  --section-pad-x: clamp(20px, 6vw, 160px);
+  --section-pad-y: clamp(56px, 10vw, 140px);
+  --section-pad-y-tight: clamp(40px, 7vw, 100px);
+
+  /* radius scale */
+  --r-sm:10px; --r-md:14px; --r-lg:18px; --r-xl:24px; --r-2xl:32px; --r-pill:999px;
+
+  /* type */
+  --font-display:'Space Grotesk','Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+  --font-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --font-mono:'Space Grotesk',monospace;
+
+  /* motion */
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --dur-fast:180ms;
+  --dur-med:340ms;
+  --dur-slow:640ms;
+
+  /* layout */
+  --container-max:1440px;
+  --header-h:88px;
+}
+
+@media (prefers-reduced-motion: reduce){
+  :root{ --dur-fast:0ms; --dur-med:0ms; --dur-slow:0ms; }
+}

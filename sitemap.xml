@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO: once a final domain is chosen, replace these relative <loc> values
+     with absolute URLs (e.g. https://mubashirsikander.dev/index.html) — the
+     sitemap spec requires absolute URLs; relative ones are a placeholder. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>./index.html</loc><priority>1.0</priority></url>
+  <url><loc>./projects/petiggo.html</loc><priority>0.8</priority></url>
+  <url><loc>./projects/united-ceres-college.html</loc><priority>0.8</priority></url>
+  <url><loc>./projects/technician-id.html</loc><priority>0.8</priority></url>
+  <url><loc>./projects/nkcc.html</loc><priority>0.8</priority></url>
+  <url><loc>./projects/meteredo.html</loc><priority>0.7</priority></url>
+</urlset>

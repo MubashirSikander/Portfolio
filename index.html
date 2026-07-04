@@ -1,289 +1,932 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hafiz Mubashir Sikander | Portfolio</title>
-  <meta name="description" content="Portfolio of Hafiz Mubashir Sikander, Flutter Developer and Mobile App Developer." />
-  <link rel="icon" href="assets/icons/favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js');</script>
+<title>Mubashir Sikander | Flutter Developer Portfolio</title>
+<meta name="description" content="Flutter Developer from Pakistan specializing in cross-platform Android and iOS applications. Explore my portfolio featuring Flutter, Firebase, REST APIs, Clean Architecture, and production-ready mobile projects.">
+<meta name="keywords" content="Mubashir Sikander, Hafiz Mubashir Sikander, Flutter Developer, Mobile Application Developer, Flutter Portfolio, Dart Developer, Android Developer, iOS Developer, Cross Platform Developer, Firebase, REST API, GetX, Riverpod, Hive, SQLite, Clean Architecture, Mobile App Developer Pakistan, Flutter Pakistan, Flutter Engineer, Mobile UI Developer">
+<meta name="author" content="Hafiz Mubashir Sikander">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="./index.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mubashir Sikander | Flutter Developer Portfolio">
+<meta property="og:description" content="Flutter Developer from Pakistan specializing in cross-platform Android and iOS applications built with Flutter, Firebase, REST APIs, and Clean Architecture.">
+<meta property="og:image" content="assets/images/og/og-image.png">
+<meta property="og:url" content="./index.html">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mubashir Sikander | Flutter Developer Portfolio">
+<meta name="twitter:description" content="Flutter Developer from Pakistan specializing in cross-platform Android and iOS applications.">
+<meta name="twitter:image" content="assets/images/og/og-image.png">
+
+<!-- Favicon -->
+<link rel="icon" href="assets/images/favicon/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="assets/images/favicon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#050a06">
+
+<!-- Preload critical assets -->
+<link rel="preload" as="image" href="assets/images/profile/mubashir-sikander.jpg">
+
+<!-- Fonts: Space Grotesk (display) + Inter (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/layout.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/sections.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Hafiz Mubashir Sikander",
+  "alternateName": "Mubashir Sikander",
+  "jobTitle": "Flutter Developer",
+  "worksFor": { "@type": "Organization", "name": "Virtuenetz" },
+  "url": "./index.html",
+  "email": "mailto:muhammad.mubashir.sikander@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Rahim Yar Khan", "addressCountry": "PK" },
+  "sameAs": [
+    "https://github.com/MubashirSikander",
+    "https://www.linkedin.com/in/itz-mubashir1009"
+  ]
+}
+</script>
 </head>
 <body>
-  <div class="scroll-progress" aria-hidden="true"></div>
-  <div class="ambient"><span></span><span></span><span></span></div>
+<a class="skip-link" href="#main">Skip to main content</a>
 
-  <header class="site-header" data-reveal>
-    <nav class="navbar container">
-      <a class="brand magnetic" href="#home">Mubashir Portfolio</a>
-      <button class="menu-btn" aria-label="Open Menu">☰</button>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<!-- ============ ICON SPRITE (inline for file:// compatibility) ============ -->
+<svg style="position:absolute;width:0;height:0" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-flutter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14 14 4h6L10 14z"/><path d="M10 14 20 4v10L14 20h-6l6-6-6-6z"/><path d="M8 18 12 14l4 4-4 4z"/></symbol>
+<symbol id="i-firebase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20 9 4l3 5 2-3 4 14z"/><path d="M6 20 15 8l4 10z" fill="currentColor" fill-opacity=".22"/></symbol>
+<symbol id="i-dart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="12" cy="12" r=".9" fill="currentColor"/></symbol>
+<symbol id="i-getx" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></symbol>
+<symbol id="i-riverpod" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 4 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 3-7 6-11z"/></symbol>
+<symbol id="i-hive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 20 7.5V16.5L12 21 4 16.5V7.5z"/><path d="M12 3v18M4 7.5l8 4.5 8-4.5M4 16.5l8-4.5 8 4.5" opacity=".5"/></symbol>
+<symbol id="i-api" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="7" height="8" rx="2"/><rect x="14" y="8" width="7" height="8" rx="2"/><path d="M10 12h4"/></symbol>
+<symbol id="i-git" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.4"/><circle cx="6" cy="18" r="2.4"/><circle cx="18" cy="9" r="2.4"/><path d="M6 8.4V15.6M6 8.4C6 12 9.5 12.6 12 12.9c2.6.3 4.3.6 6-1.5"/></symbol>
+<symbol id="i-android" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11v6M19 11v6M8 10h8v8a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1z"/><path d="M9 10 7.5 6.5M15 10l1.5-3.5M9.5 4l1 1.6M14.5 4l-1 1.6"/><path d="M9.5 13.2h.01M14.5 13.2h.01"/></symbol>
+<symbol id="i-ios" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10 19.3h4" opacity=".6"/></symbol>
+<symbol id="i-sqlite" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="7" ry="2.7"/><path d="M5 5.5v13c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7v-13"/><path d="M5 11.5c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7" opacity=".55"/></symbol>
+<symbol id="i-mysql" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="7" ry="2.7"/><path d="M5 5.5v13c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7v-13"/><path d="M5 11.5c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7" opacity=".55"/></symbol>
+<symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="7" ry="2.7"/><path d="M5 5.5v13c0 1.5 3.1 2.7 7 2.7s7-1.2 7-2.7v-13"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6 3 12l6 6M15 6l6 6-6 6"/></symbol>
+<symbol id="i-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.5 4.5 0 0 1-.6-8.96A5.5 5.5 0 0 1 17.2 8.2 4 4 0 0 1 17 18H7z"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="10" rx="2.4"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 8l9 5 9-5z"/><path d="M3 12l9 5 9-5M3 16l9 5 9-5"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.8"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13 9 18 20 6"/></symbol>
+<symbol id="i-checkc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M7.5 12.3 10.5 15.3 16.5 8.7"/></symbol>
+<symbol id="i-arrowRight" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M13 5l7 7-7 7"/></symbol>
+<symbol id="i-arrowUp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V4M5 11l7-7 7 7"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13M6 11l6 6 6-6"/><path d="M4 20h16"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2.3"/><path d="M4 7l8 6.2L20 7"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5 9 4l1 4-2 1.4a12 12 0 0 0 5.6 5.6L15 13l4 1 .5 2.5a2 2 0 0 1-2 2.4C10.8 19 5 13.2 4.5 6.5a2 2 0 0 1 2-3z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.6 7-11.7A7 7 0 0 0 5 9.3C5 14.4 12 21 12 21z"/><circle cx="12" cy="9.3" r="2.6"/></symbol>
+<symbol id="i-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 10.5V17M8 7.2v.02M12.2 17v-4a2.2 2.2 0 0 1 4.4 0v4M12.2 10.5V17" stroke-linecap="round"/></symbol>
+<symbol id="i-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.4 9.4 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.32.68.94.68 1.9v2.82c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.8 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.8-3.8-9S9.5 5.6 12 3z"/></symbol>
+<symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="16" rx="2.4"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/></symbol>
+<symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.6"/><path d="M8.5 13.8 7 21l5-2.6L17 21l-1.5-7.2"/></symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7.5" width="18" height="12" rx="2.2"/><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5M3 12.5h18"/></symbol>
+<symbol id="i-graduation" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9 12 4.5 21.5 9 12 13.5z"/><path d="M6.5 11.2V16c0 1.4 2.5 3 5.5 3s5.5-1.6 5.5-3v-4.8M21.5 9v6"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8.5" r="3.4"/><path d="M2.8 19c.7-3 3-4.8 6.2-4.8s5.5 1.8 6.2 4.8"/><circle cx="17" cy="8.8" r="2.6"/><path d="M15.6 14.4c2.6.3 4.4 2 5 4.6"/></symbol>
+<symbol id="i-message" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4.5V16H4z"/></symbol>
+<symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11 20 4 13 20l-2.5-6.5z"/><path d="M20 4 10.5 13.5"/></symbol>
+<symbol id="i-externalLink" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6H5.5A2.5 2.5 0 0 0 3 8.5v10A2.5 2.5 0 0 0 5.5 21h10a2.5 2.5 0 0 0 2.5-2.5V15M14 4h6v6M20 4 11 13"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 14.6 9l6 .8-4.4 4.1 1.1 5.9L12 16.9 6.7 19.8l1.1-5.9-4.4-4.1 6-.8z"/></symbol>
+<symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 19.5 6v6c0 5-3.2 8-7.5 9-4.3-1-7.5-4-7.5-9V6z"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.3l3.6 2.2"/></symbol>
+<symbol id="i-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="12.5" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+<symbol id="i-package" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 20.5 7.5V16.5L12 21 3.5 16.5V7.5z"/><path d="M3.5 7.5 12 12l8.5-4.5M12 12v9"/></symbol>
+<symbol id="i-terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.3"/><path d="M7 9l3.5 3L7 15M12.5 15h4.5"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.6"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="1.6"/><rect x="3.5" y="13" width="7.5" height="7.5" rx="1.6"/><rect x="13" y="13" width="7.5" height="7.5" rx="1.6"/></symbol>
+<symbol id="i-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v5M12 16v5M3 12h5M16 12h5M6 6l3 3M18 6l-3 3M6 18l3-3M18 18l-3-3"/></symbol>
+<symbol id="i-chevronDown" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8.5 12 15l7-6.5"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6.5h16M4 12h16M4 17.5h16"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+<symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="11" height="18" rx="1.5"/><path d="M8 7h3M8 11h3M8 15h3M15 10h5v11h-5"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4.5h9a3 3 0 0 1 3 3V20H8a3 3 0 0 1-3-3z"/><path d="M17 4.5H8a3 3 0 0 0-3 3"/><path d="M17 4.5v15"/></symbol>
+<symbol id="i-quote" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8.5c-2 .6-3 2-3 4.3 0 2 1.3 3.2 3 3.2s3-1.3 3-3.2c0-1.7-.9-2.7-2.2-3.1.2-1 1-1.8 2.2-2.3L9 5.5C7.9 6 7.2 7 7 8.5zM16 8.5c-2 .6-3 2-3 4.3 0 2 1.3 3.2 3 3.2s3-1.3 3-3.2c0-1.7-.9-2.7-2.2-3.1.2-1 1-1.8 2.2-2.3L18 5.5c-1.1.5-1.8 1.5-2 3z" fill="currentColor" stroke="none"/></symbol>
+</defs></svg>
 
-  <main>
-    <section id="home" class="hero container section">
-      <div class="hero-content" data-reveal>
-        <span class="status-pill"><i></i> Available for Work</span>
-        <h1 class="hero-title">Hi, I'm <br><strong>Hafiz Mubashir Sikander</strong></h1>
-        <h2><span id="typed-role"></span></h2>
-        <p>I build scalable Flutter mobile apps with clean UI, secure authentication, REST API integration, Firebase, offline support, and role-based app systems.</p>
-        <div class="hero-actions">
-          <a class="btn primary magnetic" href="#contact">Contact Me <span>→</span></a>
-          <a class="btn ghost magnetic glow-btn" href="#projects">View Projects</a>
-          <a class="btn ghost magnetic resume-btn" href="assets/resume/Hafiz-Mubashir-Sikander-Resume.pdf" download>Download Resume</a>
-        </div>
-        <div class="socials">
-          <a class="magnetic social-btn" href="https://www.linkedin.com/in/itz-mubashir1009" target="_blank" rel="noopener" aria-label="LinkedIn"><span>in</span></a>
-          <a class="magnetic social-btn" href="https://github.com/MubashirSikander" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A12 12 0 0 0 8.2 23.9c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.6 2.1 3.4 1.5.1-.7.4-1.2.7-1.5-2.6-.3-5.4-1.3-5.4-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.7.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg></a>
-          <a class="magnetic social-btn" href="https://instagram.com/itz_mubashir1009" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm8.7 2.2a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6ZM12 7.2a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Zm0 2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Z"/></svg></a>
-        </div>
+<div class="page-shell">
+<div class="bg-canvas" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="glow glow-blue"></div>
+  <div class="glow glow-violet"></div>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header>
+<nav class="navbar" aria-label="Primary">
+  <a class="nav-logo" href="#home">
+    <span class="nav-logo-mark" aria-hidden="true">MS</span>
+    Mubashir Sikander
+  </a>
+  <button class="nav-menu-toggle" id="navMenuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">
+    <svg class="ic" id="navMenuIcon"><use href="#i-menu"/></svg>
+  </button>
+  <div class="nav-links" id="navLinks">
+    <a href="#home" class="active">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="nav-cta">
+    <a class="nav-icon-btn" href="https://github.com/MubashirSikander" target="_blank" rel="noopener" aria-label="GitHub profile"><svg class="ic"><use href="#i-github"/></svg></a>
+    <a class="nav-icon-btn" href="https://www.linkedin.com/in/itz-mubashir1009" target="_blank" rel="noopener" aria-label="LinkedIn profile"><svg class="ic"><use href="#i-linkedin"/></svg></a>
+    <a class="btn btn-primary btn-sm" href="resume/mubashir-sikander-flutter-developer.pdf" download><svg class="ic"><use href="#i-download"/></svg> <span class="btn-label">Resume</span></a>
+  </div>
+</nav>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="section hero" id="home" aria-labelledby="hero-heading">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="dot"></span>Open to Flutter Developer opportunities</div>
+      <h1 id="hero-heading">Hi, I'm <span class="grad-text">Mubashir Sikander</span></h1>
+      <h2 class="hero-role" id="heroRole" aria-live="off">Flutter Developer</h2>
+      <p class="hero-para">Flutter Developer building fast, scalable, and user-focused Android and iOS applications. Experienced in Flutter, Firebase, REST APIs, Clean Architecture, and offline-first solutions with production-ready app delivery.</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="resume/mubashir-sikander-flutter-developer.pdf" download><svg class="ic"><use href="#i-download"/></svg> Download Resume</a>
+        <a class="btn btn-ghost" href="#contact"><svg class="ic"><use href="#i-mail"/></svg> Contact Me</a>
+        <a class="btn btn-outline" href="#projects"><svg class="ic"><use href="#i-arrowRight"/></svg> View Projects</a>
       </div>
-      <div class="hero-visual" data-reveal>
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-        <div class="image-ring magnetic">
-          <img src="assets/images/coding-workspace.svg" alt="Coding workspace illustration">
-          <span class="dev-icon">⌘</span>
-          <span class="float-badge badge-one">Flutter</span>
-          <span class="float-badge badge-two">Firebase</span>
-          <span class="float-badge badge-three">REST APIs</span>
-        </div>
-      </div>
-    </section>
 
-    <section class="motion-rail container" aria-label="Portfolio highlights" data-reveal>
-      <div class="rail-copy">
-        <small class="section-kicker">Portfolio Showcase</small>
-        <h2>Flutter apps, real projects, and clean product work.</h2>
-      </div>
-      <div class="rail-mask">
-        <div class="rail-track">
-          <article class="rail-card glass"><span>01</span><b>Mobile UI</b><small>Modern Flutter screens with clean layouts</small></article>
-          <article class="rail-card glass"><span>02</span><b>Secure Apps</b><small>Firebase auth, Firestore, and user roles</small></article>
-          <article class="rail-card glass"><span>03</span><b>API Work</b><small>Dio, sessions, errors, and clean responses</small></article>
-          <article class="rail-card glass"><span>04</span><b>Offline First</b><small>Hive storage, cache, and sync flows</small></article>
-          <article class="rail-card glass"><span>05</span><b>Release Ready</b><small>Self QA, bug fixes, and store builds</small></article>
-          <article class="rail-card glass"><span>01</span><b>Mobile UI</b><small>Modern Flutter screens with clean layouts</small></article>
-          <article class="rail-card glass"><span>02</span><b>Secure Apps</b><small>Firebase auth, Firestore, and user roles</small></article>
-          <article class="rail-card glass"><span>03</span><b>API Work</b><small>Dio, sessions, errors, and clean responses</small></article>
-          <article class="rail-card glass"><span>04</span><b>Offline First</b><small>Hive storage, cache, and sync flows</small></article>
-          <article class="rail-card glass"><span>05</span><b>Release Ready</b><small>Self QA, bug fixes, and store builds</small></article>
+      <div class="hero-social">
+        <div class="hero-social-icons">
+          <a class="glass social-lg" href="https://github.com/MubashirSikander" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ic"><use href="#i-github"/></svg></a>
+          <a class="glass social-lg" href="https://www.linkedin.com/in/itz-mubashir1009" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic"><use href="#i-linkedin"/></svg></a>
+          <a class="glass social-lg" href="mailto:muhammad.mubashir.sikander@gmail.com" aria-label="Email"><svg class="ic"><use href="#i-mail"/></svg></a>
+          <span class="glass social-lg is-disabled" role="img" aria-label="Play Store — coming soon" title="Play Store — coming soon"><svg class="ic"><use href="#i-globe"/></svg></span>
         </div>
+        <div class="sep" aria-hidden="true"></div>
+        <div class="hero-location"><svg class="ic" style="width:14px;height:14px;display:inline;vertical-align:-2px;"><use href="#i-pin"/></svg> Rahim Yar Khan, Pakistan</div>
       </div>
-    </section>
+    </div>
 
-    <section id="about" class="container section about about-showcase">
-      <div class="section-head" data-reveal>
-        <small class="section-kicker">My Introduction</small>
-        <h2>About Me</h2><span></span>
-      </div>
+    <div class="hero-visual">
+      <div class="portrait-stage">
+        <div class="glow glow-cyan" style="width:60%;height:60%;top:20%;left:20%;opacity:.4;" aria-hidden="true"></div>
 
-      <div class="about-showcase-card" data-reveal>
-        <div class="about-portrait-side">
-          <div class="about-portrait-card glass">
-            <img src="assets/images/mubashir-profile.jpg" alt="Hafiz Mubashir Sikander profile photo">
-          </div>
-          <div class="about-orbit-dot dot-a"></div>
-          <div class="about-orbit-dot dot-b"></div>
-        </div>
-
-        <div class="about-content-side">
-          <div class="about-stats-row">
-            <article class="about-mini-card glass">
-              <span class="card-icon">⌛</span>
-              <b>1+ Years</b>
-              <small>Experience</small>
-            </article>
-            <article class="about-mini-card glass">
-              <span class="card-icon">✓</span>
-              <b>4+ Projects</b>
-              <small>Completed</small>
-            </article>
-            <article class="about-mini-card glass">
-              <span class="card-icon">↗</span>
-              <b>Store Apps</b>
-              <small>Deployed</small>
-            </article>
-          </div>
-
-          <div class="about-text-card glass">
-            <span class="mini-label">Flutter Developer</span>
-            <p>I build scalable Flutter mobile apps with clean UI, secure authentication, REST API integration, Firebase, offline support, and role-based app systems.</p>
-            <p>I focus on clean screens, stable logic, debugging, and real business use cases. My strength is turning rough requirements into usable mobile app flows.</p>
-            <a class="btn primary about-contact-btn" href="#contact">Contact Me</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="container section skills-section">
-      <div class="section-head skills-head" data-reveal>
-        <h2>Skills</h2><span></span>
-      </div>
-      <div class="skills-cloud" data-reveal>
-        <div class="skill-marquee">
-          <div class="skill-row row-one">
-            <button>Flutter</button><button>Dart</button><button>Firebase</button><button>GetX</button><button>Riverpod</button><button>Hive</button><button>Dio</button>
-            <button>Flutter</button><button>Dart</button><button>Firebase</button><button>GetX</button><button>Riverpod</button><button>Hive</button><button>Dio</button>
-          </div>
-        </div>
-        <div class="skill-marquee">
-          <div class="skill-row row-two">
-            <button>REST APIs</button><button>SQLite</button><button>MySQL</button><button>Shared Preferences</button><button>Firebase Auth</button><button>Firestore</button><button>Realtime Database</button>
-            <button>REST APIs</button><button>SQLite</button><button>MySQL</button><button>Shared Preferences</button><button>Firebase Auth</button><button>Firestore</button><button>Realtime Database</button>
-          </div>
-        </div>
-        <div class="skill-marquee">
-          <div class="skill-row row-three">
-            <button>GitHub</button><button>Android Studio</button><button>VS Code</button><button>Kotlin</button><button>Java</button><button>C#</button><button>C++</button><button>Clean Architecture</button><button>Offline First Apps</button>
-            <button>GitHub</button><button>Android Studio</button><button>VS Code</button><button>Kotlin</button><button>Java</button><button>C#</button><button>C++</button><button>Clean Architecture</button><button>Offline First Apps</button>
+        <div class="portrait-frame">
+          <img src="assets/images/profile/mubashir-sikander.jpg" alt="Portrait of Hafiz Mubashir Sikander" width="480" height="600" fetchpriority="high">
+          <span class="portrait-code-label mono" aria-hidden="true">// portrait.dart</span>
+          <div class="glass portrait-tag">
+            <span class="row gap12"><span class="status-dot" aria-hidden="true"></span><span style="font-size:14px;font-weight:600;color:#fff;">Open to opportunities</span></span>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section id="experience" class="container section">
-      <div class="section-head" data-reveal><h2>Professional Experience</h2><span></span></div>
-      <div class="experience-stack">
-        <div class="timeline-card glass" data-reveal>
-          <div class="timeline-dot"></div>
-          <h3>Flutter Developer</h3>
-          <p class="muted">Virtuenetz Pakistan, Software Company</p>
-          <ul>
-            <li>Designed and developed real-world Flutter mobile applications.</li>
-            <li>Integrated Firebase, Firestore, Realtime Database, and Authentication.</li>
-            <li>Worked with REST APIs using Dio and secure session handling.</li>
-            <li>Collaborated with designers, QA team, and backend developers.</li>
-            <li>Improved app stability, performance, UI quality, and production readiness.</li>
-          </ul>
+        <div class="glass chip float-chip" style="--chip-rot:-6deg; top:2%; left:2%;">
+          <span class="icon-tile"><svg class="ic"><use href="#i-flutter"/></svg></span><span class="label">Flutter</span>
         </div>
-        <div class="timeline-card glass internship-card" data-reveal>
-          <div class="timeline-dot"></div>
-          <h3>Flutter Developer Internship</h3>
-          <p class="muted">Virtuenetz Pakistan · Apr 2025 - Jul 2025 · 4 months</p>
-          <p class="experience-desc">During my 3-month internship at VirtueNetz, I gained hands-on experience in mobile application development using Flutter, Dart, and Firebase. I independently designed and developed multiple projects from scratch, including a dynamic Music Player App, a fully functional ToDo App with Firestore integration, and a Task Management System featuring user role-based navigation, Firebase backend, and GetX state management. I focused on clean code, REST APIs, polished UI/UX, scalable app architecture, real-time data handling, and team collaboration.</p>
+        <div class="glass chip float-chip" style="--chip-rot:4deg; top:-2%; left:44%; animation-delay:-1.4s;">
+          <span class="icon-tile"><svg class="ic"><use href="#i-firebase"/></svg></span><span class="label">Firebase</span>
         </div>
-      </div>
-    </section>
-
-    <section id="projects" class="container section">
-      <div class="section-head" data-reveal><h2>Selected Projects</h2><span></span></div>
-      <div class="project-grid">
-        <article class="project-card glass" data-reveal>
-          <div class="mockup phone"><span>ERP App</span></div>
-          <h3>United Ceres College</h3><small>Education & Agent Management ERP</small><p>Role-based ERP mobile app with student, parent, teacher, and agent portals.</p><div><b>Flutter</b><b>Dart</b><b>GetX</b><b>Firebase</b></div>
-          <button class="project-details-btn" data-project="0">View Details →</button>
-        </article>
-        <article class="project-card glass" data-reveal>
-          <div class="mockup phone"><span>Marketplace</span></div>
-          <h3>Petiggo</h3><small>Pet Food Marketplace</small><p>E-commerce app with product browsing, cart handling, banners, and API based data.</p><div><b>Flutter</b><b>GetX</b><b>Dio</b><b>Firebase</b></div>
-          <button class="project-details-btn" data-project="1">View Details →</button>
-        </article>
-        <article class="project-card glass" data-reveal>
-          <div class="mockup tablet"><span>Survey App</span></div>
-          <h3>Technician ID</h3><small>Horse Survey Management</small><p>Offline-first tablet app for field technicians with sync and local data storage.</p><div><b>Flutter</b><b>Hive DB</b><b>REST APIs</b></div>
-          <button class="project-details-btn" data-project="2">View Details →</button>
-        </article>
-        <article class="project-card glass" data-reveal>
-          <div class="mockup phone"><span>Assets</span></div>
-          <h3>NKCC App</h3><small>Asset Management</small><p>Internal app for tracking assets with employee, supervisor, and HR roles.</p><div><b>Flutter</b><b>Clean Architecture</b><b>Firebase</b></div>
-          <button class="project-details-btn" data-project="3">View Details →</button>
-        </article>
-      </div>
-    </section>
-
-    <section id="education" class="container section">
-      <div class="section-head" data-reveal><h2>Education</h2><span></span></div>
-      <div class="education-timeline">
-        <div class="edu-line"></div>
-        <div class="education-card glass edu-left" data-reveal>
-          <div><h3>Bachelor of Science in Computer Science</h3><p>Khwaja Fareed University of Engineering and Information Technology</p></div><b>Sep 2022 - Jul 2026</b>
+        <div class="glass chip float-chip" style="--chip-rot:7deg; top:4%; right:0%; animation-delay:-2.6s;">
+          <span class="icon-tile"><svg class="ic"><use href="#i-dart"/></svg></span><span class="label">Dart</span>
         </div>
-        <div class="education-card glass edu-right" data-reveal>
-          <div><h3>ICS</h3><p>Doctors Post Graduate College, Rahim Yar Khan</p></div><b>2020 - 2022</b>
+        <div class="glass chip float-chip" style="--chip-rot:-4deg; top:24%; left:-6%; animation-delay:-3.4s;">
+          <span class="icon-tile"><svg class="ic"><use href="#i-getx"/></svg></span><span class="label">GetX</span>
         </div>
-        <div class="education-card glass edu-left" data-reveal>
-          <div><h3>Matric</h3><p>Doctors Public School, Rahim Yar Khan</p></div><b>2018 - 2020</b>
+        <div class="glass chip float-chip float-chip--secondary" style="--chip-rot:-8deg; top:22%; right:-4%; animation-delay:-.8s;">
+          <span class="icon-tile"><svg class="ic"><use href="#i-riverpod"/></svg></span><span class="label">Riverpod</span>
         </div>
-      </div>
-    </section>
-
-    <section class="container section offer">
-      <div class="section-head" data-reveal><h2>What I Offer</h2><span></span></div>
-      <div class="offer-grid">
-        <article data-reveal><span class="card-icon">📱</span><p>Flutter App Development</p></article>
-        <article data-reveal><span class="card-icon">🔥</span><p>Firebase Integration</p></article>
-        <article data-reveal><span class="card-icon">🔗</span><p>REST API Integration</p></article>
-        <article data-reveal><span class="card-icon">🎨</span><p>UI Implementation</p></article>
-        <article data-reveal><span class="card-icon">🛠️</span><p>Bug Fixing & Maintenance</p></article>
-        <article data-reveal><span class="card-icon">⚡</span><p>App Performance Optimization</p></article>
-        <article data-reveal><span class="card-icon">🏗️</span><p>Clean Architecture App Development</p></article>
-        <article data-reveal><span class="card-icon">📶</span><p>Offline-First App Development</p></article>
-      </div>
-    </section>
-
-    <section class="container section achievements">
-      <div class="section-head" data-reveal><h2>Achievements</h2><span></span></div>
-      <div class="achievement-grid">
-        <article class="glass" data-reveal><span class="card-icon">🌟</span><p>Rising Star of the Year 2026 at Virtuenetz Pakistan</p></article>
-        <article class="glass" data-reveal><span class="card-icon">🏆</span><p>1st Position in FYP at KFUEIT Career Fair & Project Expo 2026</p></article>
-        <article class="glass" data-reveal><span class="card-icon">🚀</span><p>Built and contributed to production-ready mobile apps</p></article>
-        <article class="glass" data-reveal><span class="card-icon">🛒</span><p>Worked on apps deployed to Play Store and App Store</p></article>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section section">
-      <div class="contact-wave"></div>
-      <div class="container contact-wrap">
-        <div class="contact-info" data-reveal>
-          <h2>Get in touch</h2>
-          <h3>Email</h3><a href="mailto:muhammad.mubashir.sikander@gmail.com">muhammad.mubashir.sikander@gmail.com</a>
-          <h3>Location</h3><p>Rahim Yar Khan, Pakistan</p>
-          <h3>Available For</h3><p>Flutter mobile app development, UI implementation, and API integration work.</p>
+        <div class="glass chip float-chip float-chip--secondary" style="--chip-rot:5deg; top:48%; left:-8%; animation-delay:-2s;">
+          <span class="icon-tile"><svg class="ic"><use href="#i-hive"/></svg></span><span class="label">Hive</span>
         </div>
-        <form class="contact-form glass" data-reveal>
-          <div class="form-row"><label>First name<input type="text" placeholder="Type first name"></label><label>Last name<input type="text" placeholder="Type last name"></label></div>
-          <label>Email<input type="email" placeholder="Type email address"></label>
-          <label>Message<textarea placeholder="Type your message"></textarea></label>
-          <button class="btn primary magnetic" type="submit">Send Message →</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer container">
-    <b>Mubashir Portfolio</b><p>© 2026 Hafiz Mubashir Sikander. Built with HTML, CSS and JavaScript.</p><div><a href="https://www.linkedin.com/in/itz-mubashir1009" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/MubashirSikander" target="_blank" rel="noopener">GitHub</a><a href="https://instagram.com/itz_mubashir1009" target="_blank" rel="noopener">Instagram</a><a href="mailto:muhammad.mubashir.sikander@gmail.com">Email</a></div>
-  </footer>
-
-  <a href="#home" class="back-to-top magnetic" aria-label="Go to top">↑</a>
-
-
-  <div class="project-modal" aria-hidden="true">
-    <div class="modal-backdrop"></div>
-    <div class="modal-card glass">
-      <button class="modal-close" aria-label="Close project details">×</button>
-      <h2 id="modal-title">Project Title</h2>
-      <p id="modal-subtitle" class="muted"></p>
-      <p id="modal-desc"></p>
-      <ul id="modal-points"></ul>
-      <div class="modal-links">
-        <a class="btn primary" href="#" target="_blank">Play Store</a>
-        <a class="btn ghost" href="#" target="_blank">App Store</a>
+        <div class="glass chip float-chip float-chip--secondary" style="--chip-rot:6deg; top:46%; right:-6%; animation-delay:-3.8s;">
+          <span class="icon-tile"><svg class="ic"><use href="#i-api"/></svg></span><span class="label">REST API</span>
+        </div>
+        <div class="glass chip float-chip" style="--chip-rot:-5deg; bottom:4%; left:0%; animation-delay:-1s;">
+          <span class="icon-tile"><svg class="ic"><use href="#i-android"/></svg></span><span class="label">Android</span>
+        </div>
+        <div class="glass chip float-chip" style="--chip-rot:-7deg; bottom:6%; right:2%; animation-delay:-4.2s;">
+          <span class="icon-tile"><svg class="ic"><use href="#i-ios"/></svg></span><span class="label">iOS</span>
+        </div>
+        <div class="glass chip float-chip float-chip--secondary" style="--chip-rot:-4deg; bottom:-8%; left:14%; animation-delay:-2.2s;">
+          <span class="icon-tile"><svg class="ic"><use href="#i-sqlite"/></svg></span><span class="label">SQLite</span>
+        </div>
+        <div class="glass chip float-chip float-chip--secondary" style="--chip-rot:8deg; bottom:2%; right:14%; animation-delay:-3s;">
+          <span class="icon-tile"><svg class="ic"><use href="#i-mysql"/></svg></span><span class="label">MySQL</span>
+        </div>
+        <div class="glass chip float-chip float-chip--secondary" style="--chip-rot:6deg; top:66%; left:-2%; animation-delay:-.4s;">
+          <span class="icon-tile"><svg class="ic"><use href="#i-git"/></svg></span><span class="label">Git</span>
+        </div>
       </div>
     </div>
   </div>
 
-  <script src="js/main.js"></script>
+  <div class="ticker" aria-label="Technologies I work with">
+    <div class="ticker-fade-l" aria-hidden="true"></div>
+    <div class="ticker-fade-r" aria-hidden="true"></div>
+    <div class="ticker-track" id="tickerTrack">
+      <span class="pill"><svg class="ic"><use href="#i-sparkle"/></svg>Flutter</span>
+      <span class="pill"><svg class="ic"><use href="#i-sparkle"/></svg>Firebase</span>
+      <span class="pill"><svg class="ic"><use href="#i-sparkle"/></svg>REST API</span>
+      <span class="pill"><svg class="ic"><use href="#i-sparkle"/></svg>SQLite</span>
+      <span class="pill"><svg class="ic"><use href="#i-sparkle"/></svg>GitHub</span>
+      <span class="pill"><svg class="ic"><use href="#i-sparkle"/></svg>Android</span>
+      <span class="pill"><svg class="ic"><use href="#i-sparkle"/></svg>iOS</span>
+      <span class="pill"><svg class="ic"><use href="#i-sparkle"/></svg>Clean Architecture</span>
+      <span class="pill"><svg class="ic"><use href="#i-sparkle"/></svg>Offline First</span>
+      <span class="pill"><svg class="ic"><use href="#i-sparkle"/></svg>GetX</span>
+      <span class="pill"><svg class="ic"><use href="#i-sparkle"/></svg>Riverpod</span>
+      <span class="pill"><svg class="ic"><use href="#i-sparkle"/></svg>Hive</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section-tight" id="about" aria-labelledby="about-heading">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow"><span class="dot"></span>About Me</div>
+      <h2 class="section-title" id="about-heading">A bit <span class="grad-text">about me</span></h2>
+    </div>
+  </div>
+  <div class="card" style="padding:40px;" data-reveal>
+    <p style="font-size:1.05rem;">Flutter Developer with hands-on experience building cross-platform mobile applications for Android and iOS. I specialize in Flutter, Dart, Firebase, REST APIs, GetX, Riverpod, Hive, and Clean Architecture. I have contributed to production-ready applications with features such as offline-first data synchronization, role-based access control, secure authentication, and real-time data management. I enjoy turning business requirements into reliable mobile solutions while writing clean, maintainable, and scalable code. I work closely with designers, QA engineers, and backend developers to deliver high-quality applications that provide a smooth and consistent user experience.</p>
+    <p style="margin-top:20px;">I care about writing code that's easy for the next person — often future me — to pick up and extend, which is why clean architecture and clear separation of concerns show up in everything I build. I treat every project as a chance to get a little better: trying a new state management approach, tightening up an offline-sync flow, or simply writing a cleaner widget than I did last time. At the end of the day, the goal is always the same — a smooth, dependable experience for the person actually using the app.</p>
+  </div>
+</section>
+
+<!-- ============ WHAT I DO ============ -->
+<section class="section-tight" id="what-i-do" aria-labelledby="whatido-heading">
+  <div class="section-head centered">
+    <div class="eyebrow"><span class="dot"></span>What I Do</div>
+    <h2 class="section-title" id="whatido-heading">Where I Add <span class="grad-text">Value</span></h2>
+    <p class="section-sub">A practical toolkit for turning product requirements into fast, reliable mobile apps.</p>
+  </div>
+
+  <div class="service-grid" data-reveal-group>
+    <div class="card service-card" data-reveal style="--reveal-index:0;">
+      <div class="icon-tile"><svg class="ic"><use href="#i-flutter"/></svg></div>
+      <h3>Flutter Development</h3>
+      <p>Building polished, production-ready Android and iOS apps from a single Flutter codebase — from first screen to store-ready release.</p>
+    </div>
+    <div class="card service-card" data-reveal style="--reveal-index:1;">
+      <div class="icon-tile"><svg class="ic"><use href="#i-layers"/></svg></div>
+      <h3>Cross-Platform Apps</h3>
+      <p>Writing one codebase that ships consistently on both Android and iOS, reducing duplicate work without compromising platform feel.</p>
+    </div>
+    <div class="card service-card" data-reveal style="--reveal-index:2;">
+      <div class="icon-tile"><svg class="ic"><use href="#i-firebase"/></svg></div>
+      <h3>Firebase Integration</h3>
+      <p>Wiring up Authentication, Cloud Firestore, and Realtime Database to power secure sign-in, live data, and real-time features.</p>
+    </div>
+    <div class="card service-card" data-reveal style="--reveal-index:3;">
+      <div class="icon-tile"><svg class="ic"><use href="#i-api"/></svg></div>
+      <h3>REST API Integration</h3>
+      <p>Connecting Flutter apps to backend services with Dio, handling authentication tokens, cookies, and reliable error handling.</p>
+    </div>
+    <div class="card service-card" data-reveal style="--reveal-index:4;">
+      <div class="icon-tile"><svg class="ic"><use href="#i-package"/></svg></div>
+      <h3>Clean Architecture</h3>
+      <p>Structuring apps in clear, maintainable layers — presentation, state, and data — so features stay easy to extend and debug.</p>
+    </div>
+    <div class="card service-card" data-reveal style="--reveal-index:5;">
+      <div class="icon-tile"><svg class="ic"><use href="#i-cloud"/></svg></div>
+      <h3>Offline-First Apps</h3>
+      <p>Designing apps that keep working without a connection, storing data locally and syncing automatically once the network returns.</p>
+    </div>
+    <div class="card service-card" data-reveal style="--reveal-index:6;">
+      <div class="icon-tile"><svg class="ic"><use href="#i-zap"/></svg></div>
+      <h3>Performance Optimization</h3>
+      <p>Profiling and tuning UI rendering, state updates, and data loading so apps stay smooth under real-world conditions.</p>
+    </div>
+    <div class="card service-card" data-reveal style="--reveal-index:7;">
+      <div class="icon-tile"><svg class="ic"><use href="#i-monitor"/></svg></div>
+      <h3>Responsive UI</h3>
+      <p>Implementing pixel-accurate, responsive interfaces that hold up cleanly across different screen sizes and device types.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills" aria-labelledby="skills-heading">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow"><span class="dot"></span>Capabilities</div>
+      <h2 class="section-title" id="skills-heading">Skills &amp; <span class="grad-text">Expertise</span></h2>
+      <p class="section-sub">A toolkit built for shipping production-grade, offline-capable mobile apps — from UI to backend integration.</p>
+    </div>
+    <div class="row gap12" aria-hidden="true">
+      <div class="icon-tile" style="width:56px;height:56px;"><svg class="ic" style="width:26px;height:26px;"><use href="#i-flutter"/></svg></div>
+      <div class="icon-tile" style="width:56px;height:56px;"><svg class="ic" style="width:26px;height:26px;"><use href="#i-firebase"/></svg></div>
+      <div class="icon-tile" style="width:56px;height:56px;"><svg class="ic" style="width:26px;height:26px;"><use href="#i-getx"/></svg></div>
+      <div class="icon-tile" style="width:56px;height:56px;"><svg class="ic" style="width:26px;height:26px;"><use href="#i-git"/></svg></div>
+    </div>
+  </div>
+
+  <div class="skills-grid" data-reveal-group>
+    <div class="card skill-card" data-reveal style="--reveal-index:0;">
+      <div class="skill-cat-head">
+        <div class="icon-tile"><svg class="ic"><use href="#i-code"/></svg></div>
+        <div><div class="title">Programming</div><div class="count">6 skills</div></div>
+      </div>
+      <div class="skill-tags">
+        <span class="chip"><svg class="ic"><use href="#i-flutter"/></svg>Flutter</span>
+        <span class="chip"><svg class="ic"><use href="#i-dart"/></svg>Dart</span>
+        <span class="chip"><svg class="ic"><use href="#i-code"/></svg>Java</span>
+        <span class="chip"><svg class="ic"><use href="#i-code"/></svg>Kotlin</span>
+        <span class="chip"><svg class="ic"><use href="#i-code"/></svg>C#</span>
+        <span class="chip"><svg class="ic"><use href="#i-code"/></svg>C++</span>
+      </div>
+    </div>
+
+    <div class="card skill-card" data-reveal style="--reveal-index:1;">
+      <div class="skill-cat-head">
+        <div class="icon-tile"><svg class="ic"><use href="#i-cloud"/></svg></div>
+        <div><div class="title">Backend</div><div class="count">5 skills</div></div>
+      </div>
+      <div class="skill-tags">
+        <span class="chip"><svg class="ic"><use href="#i-firebase"/></svg>Firebase</span>
+        <span class="chip"><svg class="ic"><use href="#i-lock"/></svg>Authentication</span>
+        <span class="chip"><svg class="ic"><use href="#i-database"/></svg>Cloud Firestore</span>
+        <span class="chip"><svg class="ic"><use href="#i-database"/></svg>Realtime Database</span>
+        <span class="chip"><svg class="ic"><use href="#i-api"/></svg>REST API</span>
+      </div>
+    </div>
+
+    <div class="card skill-card" data-reveal style="--reveal-index:2;">
+      <div class="skill-cat-head">
+        <div class="icon-tile"><svg class="ic"><use href="#i-layers"/></svg></div>
+        <div><div class="title">State Management</div><div class="count">2 skills</div></div>
+      </div>
+      <div class="skill-tags">
+        <span class="chip"><svg class="ic"><use href="#i-getx"/></svg>GetX</span>
+        <span class="chip"><svg class="ic"><use href="#i-riverpod"/></svg>Riverpod</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills-grid-secondary" data-reveal-group>
+    <div class="card skill-card" data-reveal style="--reveal-index:0;">
+      <div class="skill-cat-head">
+        <div class="icon-tile"><svg class="ic"><use href="#i-api"/></svg></div>
+        <div><div class="title">Networking</div><div class="count">2 skills</div></div>
+      </div>
+      <div class="skill-tags">
+        <span class="chip"><svg class="ic"><use href="#i-api"/></svg>Dio</span>
+        <span class="chip"><svg class="ic"><use href="#i-lock"/></svg>Dio Cookie Manager</span>
+      </div>
+    </div>
+    <div class="card skill-card" data-reveal style="--reveal-index:1;">
+      <div class="skill-cat-head">
+        <div class="icon-tile"><svg class="ic"><use href="#i-database"/></svg></div>
+        <div><div class="title">Storage</div><div class="count">4 skills</div></div>
+      </div>
+      <div class="skill-tags">
+        <span class="chip"><svg class="ic"><use href="#i-hive"/></svg>Hive</span>
+        <span class="chip"><svg class="ic"><use href="#i-sqlite"/></svg>SQLite</span>
+        <span class="chip"><svg class="ic"><use href="#i-database"/></svg>Shared Preferences</span>
+        <span class="chip"><svg class="ic"><use href="#i-mysql"/></svg>MySQL</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills-grid-secondary" data-reveal-group>
+    <div class="card skill-card" data-reveal style="--reveal-index:0;">
+      <div class="skill-cat-head">
+        <div class="icon-tile"><svg class="ic"><use href="#i-package"/></svg></div>
+        <div><div class="title">Architecture</div><div class="count">4 skills</div></div>
+      </div>
+      <div class="skill-tags">
+        <span class="chip"><svg class="ic"><use href="#i-layers"/></svg>Clean Architecture</span>
+        <span class="chip"><svg class="ic"><use href="#i-cloud"/></svg>Offline First</span>
+        <span class="chip"><svg class="ic"><use href="#i-shield"/></svg>Role-Based Access Control</span>
+        <span class="chip"><svg class="ic"><use href="#i-lock"/></svg>Secure Authentication</span>
+      </div>
+    </div>
+    <div class="card skill-card" data-reveal style="--reveal-index:1;">
+      <div class="skill-cat-head">
+        <div class="icon-tile"><svg class="ic"><use href="#i-terminal"/></svg></div>
+        <div><div class="title">Tools</div><div class="count">4 skills</div></div>
+      </div>
+      <div class="skill-tags">
+        <span class="chip"><svg class="ic"><use href="#i-git"/></svg>Git</span>
+        <span class="chip"><svg class="ic"><use href="#i-github"/></svg>GitHub</span>
+        <span class="chip"><svg class="ic"><use href="#i-android"/></svg>Android Studio</span>
+        <span class="chip"><svg class="ic"><use href="#i-code"/></svg>VS Code</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card skill-card" style="margin-top:32px;" data-reveal>
+    <div class="skill-cat-head">
+      <div class="icon-tile"><svg class="ic"><use href="#i-users"/></svg></div>
+      <div><div class="title">Professional Skills</div><div class="count">How I work with people and code</div></div>
+    </div>
+    <div class="pro-skills-list">
+      <span class="pro-skill-pill"><span class="icon-tile-sm"><svg class="ic"><use href="#i-target"/></svg></span>Problem Solving</span>
+      <span class="pro-skill-pill"><span class="icon-tile-sm"><svg class="ic"><use href="#i-message"/></svg></span>Communication</span>
+      <span class="pro-skill-pill"><span class="icon-tile-sm"><svg class="ic"><use href="#i-users"/></svg></span>Team Collaboration</span>
+      <span class="pro-skill-pill"><span class="icon-tile-sm"><svg class="ic"><use href="#i-terminal"/></svg></span>Debugging</span>
+      <span class="pro-skill-pill"><span class="icon-tile-sm"><svg class="ic"><use href="#i-zap"/></svg></span>Performance Optimization</span>
+      <span class="pro-skill-pill"><span class="icon-tile-sm"><svg class="ic"><use href="#i-monitor"/></svg></span>UI Implementation</span>
+      <span class="pro-skill-pill"><span class="icon-tile-sm"><svg class="ic"><use href="#i-check"/></svg></span>Bug Fixing</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATISTICS ============ -->
+<section aria-label="Career statistics">
+  <div class="stats-band" data-reveal-group>
+    <div class="card stat-item" data-reveal style="--reveal-index:0;">
+      <div class="num" data-count-to="4" data-count-suffix="+">0</div>
+      <div class="label">Projects</div>
+    </div>
+    <div class="card stat-item" data-reveal style="--reveal-index:1;">
+      <div class="num" data-count-to="1" data-count-suffix="+">0</div>
+      <div class="label">Years Experience</div>
+    </div>
+    <div class="card stat-item" data-reveal style="--reveal-index:2;">
+      <div class="num" style="font-size:1.3rem;">Android &amp; iOS</div>
+      <div class="label">Development</div>
+    </div>
+    <div class="card stat-item" data-reveal style="--reveal-index:3;">
+      <div class="num" style="font-size:1.3rem;">Cross-Platform</div>
+      <div class="label">Development</div>
+    </div>
+    <div class="card stat-item" data-reveal style="--reveal-index:4;">
+      <div class="num" style="font-size:1.3rem;">Flutter</div>
+      <div class="label">Development</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects" aria-labelledby="projects-heading">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow"><span class="dot"></span>Selected Work</div>
+      <h2 class="section-title" id="projects-heading">Featured <span class="grad-text">Projects</span></h2>
+      <p class="section-sub">Five apps spanning marketplace, education, field service, and asset management — plus one personal project.</p>
+    </div>
+    <div class="row gap12">
+      <span class="chip"><svg class="ic"><use href="#i-grid"/></svg>4+ Professional Projects</span>
+      <span class="chip"><svg class="ic"><use href="#i-checkc"/></svg>1 Deployed</span>
+    </div>
+  </div>
+
+  <div class="projects-grid" data-reveal-group>
+
+    <article class="card proj-card" data-reveal style="--reveal-index:0;">
+      <div class="proj-thumb">
+        <img src="assets/images/projects/petiggo/home.png" alt="Petiggo app home screen" loading="lazy" decoding="async" width="800" height="500">
+        <div class="thumb-overlay" aria-hidden="true"></div>
+        <div class="plat-pill"><span class="pill">Android</span><span class="pill">iOS</span></div>
+        <span class="status-pill status-progress"><span class="dot"></span>In Progress</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-title">Petiggo — Pet Food Marketplace</div>
+        <div class="proj-meta"><svg class="ic" style="width:14px;height:14px;"><use href="#i-calendar"/></svg><span>Mar 2025 – Present</span><span>·</span><span>E-Commerce / Marketplace</span></div>
+        <p class="proj-desc">A multi-vendor pet-supplies marketplace app with vendor-grouped cart and checkout, order tracking, and a real-time live-chat support system with automatic ticket escalation.</p>
+        <div class="proj-tech">
+          <span class="chip">Flutter</span><span class="chip">GetX</span><span class="chip">Dio</span><span class="chip">Firebase</span>
+        </div>
+        <div class="proj-footer">
+          <a class="btn btn-primary btn-sm" href="projects/petiggo.html">View Details <svg class="ic"><use href="#i-arrowRight"/></svg></a>
+          <div class="proj-links">
+            <span class="icon-btn is-disabled" title="Not yet released"><svg class="ic"><use href="#i-android"/></svg></span>
+            <span class="icon-btn is-disabled" title="Not yet released"><svg class="ic"><use href="#i-ios"/></svg></span>
+            <span class="icon-btn is-disabled" title="Private repository"><svg class="ic"><use href="#i-github"/></svg></span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card proj-card" data-reveal style="--reveal-index:1;">
+      <div class="proj-thumb">
+        <img src="assets/images/projects/united-ceres-college/screen-1.png" alt="United Ceres College app screen" loading="lazy" decoding="async" width="800" height="500">
+        <div class="thumb-overlay" aria-hidden="true"></div>
+        <div class="plat-pill"><span class="pill">Android</span><span class="pill">iOS</span></div>
+        <span class="status-pill status-live"><span class="dot"></span>Deployed</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-title">United Ceres College — Campus Management</div>
+        <div class="proj-meta"><svg class="ic" style="width:14px;height:14px;"><use href="#i-calendar"/></svg><span>Feb 2025 – Apr 2026</span><span>·</span><span>Education / Campus ERP</span></div>
+        <p class="proj-desc">A role-based educational management app serving Students, Parents, Teachers, and Agents from one shared codebase — attendance, academic records, finance, and support ticketing.</p>
+        <div class="proj-tech">
+          <span class="chip">Flutter</span><span class="chip">GetX</span><span class="chip">Dio</span><span class="chip">Firebase</span>
+        </div>
+        <div class="proj-footer">
+          <a class="btn btn-primary btn-sm" href="projects/united-ceres-college.html">View Details <svg class="ic"><use href="#i-arrowRight"/></svg></a>
+          <div class="proj-links">
+            <span class="icon-btn" title="Play Store"><svg class="ic"><use href="#i-android"/></svg></span>
+            <span class="icon-btn" title="App Store"><svg class="ic"><use href="#i-ios"/></svg></span>
+            <span class="icon-btn is-disabled" title="Not publicly available"><svg class="ic"><use href="#i-github"/></svg></span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card proj-card" data-reveal style="--reveal-index:2;">
+      <div class="proj-thumb">
+        <img src="assets/images/projects/technician-id/assigned-horse-list.png" alt="Technician ID app assigned horse list screen" loading="lazy" decoding="async" width="800" height="500">
+        <div class="thumb-overlay" aria-hidden="true"></div>
+        <div class="plat-pill"><span class="pill">Android</span><span class="pill">iOS</span></div>
+        <span class="status-pill status-progress"><span class="dot"></span>Active Development</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-title">Technician ID — Field Identification App</div>
+        <div class="proj-meta"><svg class="ic" style="width:14px;height:14px;"><use href="#i-calendar"/></svg><span>Nov 2025 – Jan 2026</span><span>·</span><span>Field Service / Data Collection</span></div>
+        <p class="proj-desc">A tablet-first, offline-first Flutter app for field technicians identifying horses — QR tag scanning, dynamic marking taxonomy, GPS capture, and automatic sync once back online.</p>
+        <div class="proj-tech">
+          <span class="chip">Flutter</span><span class="chip">GetX</span><span class="chip">Hive</span><span class="chip">REST API</span>
+        </div>
+        <div class="proj-footer">
+          <a class="btn btn-primary btn-sm" href="projects/technician-id.html">View Details <svg class="ic"><use href="#i-arrowRight"/></svg></a>
+          <div class="proj-links">
+            <span class="icon-btn is-disabled" title="Internal field tool"><svg class="ic"><use href="#i-android"/></svg></span>
+            <span class="icon-btn is-disabled" title="Internal field tool"><svg class="ic"><use href="#i-ios"/></svg></span>
+            <span class="icon-btn is-disabled" title="Private repository"><svg class="ic"><use href="#i-github"/></svg></span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card proj-card" data-reveal style="--reveal-index:3;">
+      <div class="proj-thumb">
+        <img src="assets/images/projects/nkcc/dashboard.png" alt="NKCC asset management dashboard screen" loading="lazy" decoding="async" width="800" height="500">
+        <div class="thumb-overlay" aria-hidden="true"></div>
+        <div class="plat-pill"><span class="pill">Android</span><span class="pill">iOS</span></div>
+        <span class="status-pill status-live"><span class="dot"></span>Completed</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-title">NKCC — Asset Management App</div>
+        <div class="proj-meta"><svg class="ic" style="width:14px;height:14px;"><use href="#i-calendar"/></svg><span>Aug 2025 – Sep 2025</span><span>·</span><span>Enterprise / Asset Management</span></div>
+        <p class="proj-desc">A cross-platform asset management app — I designed and implemented the complete UI layer: dashboard, asset listing/detail, assignment flows, and profile screens.</p>
+        <div class="proj-tech">
+          <span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Material Design</span>
+        </div>
+        <div class="proj-footer">
+          <a class="btn btn-primary btn-sm" href="projects/nkcc.html">View Details <svg class="ic"><use href="#i-arrowRight"/></svg></a>
+          <div class="proj-links">
+            <span class="icon-btn is-disabled" title="Internal release"><svg class="ic"><use href="#i-android"/></svg></span>
+            <span class="icon-btn is-disabled" title="Internal release"><svg class="ic"><use href="#i-ios"/></svg></span>
+            <span class="icon-btn is-disabled" title="Private repository"><svg class="ic"><use href="#i-github"/></svg></span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card proj-card" style="grid-column:1 / -1;" data-reveal style="--reveal-index:4;">
+      <div class="proj-thumb" style="height:220px;">
+        <img src="assets/images/projects/meteredo/home-screen.jpg" alt="Meteredo utility tracker home screen" loading="lazy" decoding="async" width="800" height="500">
+        <div class="thumb-overlay" aria-hidden="true"></div>
+        <div class="plat-pill"><span class="pill">Android</span><span class="pill">iOS</span></div>
+        <span class="status-pill status-progress"><span class="dot"></span>In Development</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-title">Meteredo — Smart Utility Tracker <span class="chip" style="margin-left:8px;">Personal Project</span></div>
+        <div class="proj-meta"><svg class="ic" style="width:14px;height:14px;"><use href="#i-calendar"/></svg><span>Utilities</span></div>
+        <p class="proj-desc">A personal project for tracking electricity meter readings, estimating bills, and managing multiple utility meters — with secure email/Google/biometric authentication.</p>
+        <div class="proj-tech">
+          <span class="chip">Flutter</span><span class="chip">Riverpod</span><span class="chip">Firebase</span>
+        </div>
+        <div class="proj-footer">
+          <a class="btn btn-primary btn-sm" href="projects/meteredo.html">View Details <svg class="ic"><use href="#i-arrowRight"/></svg></a>
+          <div class="proj-links">
+            <span class="icon-btn is-disabled" title="Not yet released"><svg class="ic"><use href="#i-android"/></svg></span>
+            <span class="icon-btn is-disabled" title="Not yet released"><svg class="ic"><use href="#i-ios"/></svg></span>
+            <span class="icon-btn is-disabled" title="Private repository"><svg class="ic"><use href="#i-github"/></svg></span>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience" aria-labelledby="experience-heading">
+  <div class="section-head centered">
+    <div class="eyebrow"><span class="dot"></span>Career Path</div>
+    <h2 class="section-title" id="experience-heading">Work <span class="grad-text">Experience</span></h2>
+    <p class="section-sub">Building production Flutter apps at Virtuenetz.</p>
+  </div>
+
+  <div class="tl-wrap">
+    <div class="tl-line" aria-hidden="true"></div>
+    <div class="tl-row">
+      <div class="tl-year">Jul 2025</div>
+      <div class="tl-dot" data-reveal-dot></div>
+      <div class="card tl-card" data-reveal>
+        <div class="row gap14">
+          <div class="icon-tile"><svg class="ic"><use href="#i-briefcase"/></svg></div>
+          <div>
+            <div class="tl-role">Flutter Developer</div>
+            <div class="tl-company">Virtuenetz</div>
+          </div>
+        </div>
+        <div class="tl-meta">
+          <span class="row gap8"><svg class="ic" style="width:14px;height:14px;"><use href="#i-calendar"/></svg>Jul 2025 — Present</span>
+          <span class="row gap8"><svg class="ic" style="width:14px;height:14px;"><use href="#i-pin"/></svg>Rahim Yar Khan, Pakistan</span>
+        </div>
+
+        <div class="tl-subhead">Responsibilities</div>
+        <div class="tl-list">
+          <div class="item"><svg class="ic"><use href="#i-check"/></svg><span>Developed and maintained cross-platform mobile applications using Flutter</span></div>
+          <div class="item"><svg class="ic"><use href="#i-check"/></svg><span>Designed responsive Android and iOS interfaces</span></div>
+          <div class="item"><svg class="ic"><use href="#i-check"/></svg><span>Integrated Firebase Authentication, Firestore, and Realtime Database</span></div>
+          <div class="item"><svg class="ic"><use href="#i-check"/></svg><span>Consumed REST APIs and collaborated with backend developers, designers, and QA engineers</span></div>
+          <div class="item"><svg class="ic"><use href="#i-check"/></svg><span>Implemented business logic, fixed bugs, and optimized application performance</span></div>
+          <div class="item"><svg class="ic"><use href="#i-check"/></svg><span>Contributed across the complete app lifecycle, including UI implementation, business logic, and self-QA</span></div>
+        </div>
+
+        <div class="tl-tech">
+          <span class="chip">Flutter</span><span class="chip">Firebase</span><span class="chip">REST API</span><span class="chip">GetX</span><span class="chip">Riverpod</span><span class="chip">Hive</span><span class="chip">Git</span>
+        </div>
+
+        <div class="divider" style="margin:20px 0 16px;"></div>
+        <div class="tl-subhead" style="margin-top:0;">Achievements</div>
+        <div class="tl-list">
+          <div class="item tl-achieve"><svg class="ic"><use href="#i-award"/></svg><span>Delivered production Flutter applications spanning education, asset management, field survey, and marketplace domains</span></div>
+          <div class="item tl-achieve"><svg class="ic"><use href="#i-award"/></svg><span>Took ownership of Firebase-backed authentication and real-time data features end to end</span></div>
+          <div class="item tl-achieve"><svg class="ic"><use href="#i-award"/></svg><span>Became a reliable point of contact on the team for REST API integration and bug resolution</span></div>
+        </div>
+      </div>
+      <div class="tl-gap"></div>
+      <div class="tl-spacer"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section" id="education" aria-labelledby="education-heading">
+  <div class="section-head centered">
+    <div class="eyebrow"><span class="dot"></span>Academic Background</div>
+    <h2 class="section-title" id="education-heading">Education</h2>
+    <p class="section-sub">Formal foundations in computer science.</p>
+  </div>
+
+  <div class="education-grid" data-reveal-group>
+    <div class="card edu-card" data-reveal>
+      <div class="edu-head">
+        <div class="icon-tile" style="width:64px;height:64px;"><svg class="ic" style="width:30px;height:30px;"><use href="#i-graduation"/></svg></div>
+        <span class="pill"><svg class="ic"><use href="#i-calendar"/></svg>Sep 2022 – Jul 2026</span>
+      </div>
+      <div class="edu-degree">B.S. Computer Science</div>
+      <div class="edu-school"><svg class="ic" style="width:16px;height:16px;"><use href="#i-building"/></svg>Khwaja Fareed University of Engineering and Information Technology</div>
+      <div class="edu-meta"><svg class="ic" style="width:14px;height:14px;"><use href="#i-award"/></svg>CGPA 3.3 · Rahim Yar Khan</div>
+
+      <div class="divider" style="margin:24px 0 20px;"></div>
+
+      <div class="edu-subhead">Achievements</div>
+      <div class="edu-list">
+        <div class="item"><svg class="ic"><use href="#i-star"/></svg><span>1st Position — KFUEIT Career Fair Project Exhibition</span></div>
+        <div class="item"><svg class="ic"><use href="#i-star"/></svg><span>Notable project: AI-Powered Alopecia Detection and Stage Classification System</span></div>
+      </div>
+
+      <div class="edu-subhead" style="margin-top:22px;">Relevant Coursework</div>
+      <div class="edu-coursework">
+        <span class="chip">Artificial Intelligence</span>
+        <span class="chip">Data Structures</span>
+        <span class="chip">Database Systems</span>
+        <span class="chip">Object-Oriented Programming</span>
+        <span class="chip">Mobile Development</span>
+        <span class="chip">Software Engineering</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card cert-strip" data-reveal>
+    <div class="cert-head">
+      <div class="icon-tile" style="color:var(--warning-text);background:rgba(251,191,36,.12);"><svg class="ic"><use href="#i-award"/></svg></div>
+      <div><div class="title">Certifications</div><div class="sub">Verified credentials</div></div>
+    </div>
+    <div class="cert-list" id="certList">
+      <a class="chip" href="https://coursera.org/verify/A3BNK6IM9XIA" target="_blank" rel="noopener"><svg class="ic"><use href="#i-checkc"/></svg>Start Writing Prompts Like a Pro — Google, via Coursera</a>
+      <!-- TODO: additional certifications can be appended here as new .chip anchors -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ FUTURE SECTIONS (placeholders) ============ -->
+<section class="section-tight" id="more" aria-labelledby="more-heading">
+  <div class="section-head centered">
+    <div class="eyebrow"><span class="dot"></span>Coming Soon</div>
+    <h2 class="section-title" id="more-heading">More <span class="grad-text">to Come</span></h2>
+    <p class="section-sub">A few sections I'm actively building out — check back later.</p>
+  </div>
+  <div class="placeholder-grid" data-reveal-group>
+    <div class="card placeholder-card" data-reveal style="--reveal-index:0;">
+      <div class="icon-tile"><svg class="ic"><use href="#i-package"/></svg></div>
+      <h3>Open Source</h3>
+      <p>Packages and contributions I've published will show up here.</p>
+      <span class="badge">Coming Soon</span>
+    </div>
+    <div class="card placeholder-card" data-reveal style="--reveal-index:1;">
+      <div class="icon-tile"><svg class="ic"><use href="#i-quote"/></svg></div>
+      <h3>Testimonials</h3>
+      <p>Feedback from teammates and collaborators will be featured here.</p>
+      <span class="badge">Coming Soon</span>
+    </div>
+    <div class="card placeholder-card" data-reveal style="--reveal-index:2;">
+      <div class="icon-tile"><svg class="ic"><use href="#i-book"/></svg></div>
+      <h3>Blogs</h3>
+      <p>Technical write-ups and case-study deep dives will be published here.</p>
+      <span class="badge">Coming Soon</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact" aria-labelledby="contact-heading">
+  <div class="section-head centered">
+    <div class="eyebrow"><span class="dot"></span>Let's Talk</div>
+    <h2 class="section-title" id="contact-heading">Get In <span class="grad-text">Touch</span></h2>
+    <p class="section-sub">Have a Flutter project, a role, or just want to talk mobile architecture? My inbox is always open.</p>
+  </div>
+
+  <div class="contact-layout">
+    <div>
+      <div class="card contact-info-card" data-reveal>
+        <div class="contact-info-row">
+          <div class="icon-tile"><svg class="ic"><use href="#i-mail"/></svg></div>
+          <div><div class="label">Email</div><div class="value">muhammad.mubashir.sikander@gmail.com</div></div>
+        </div>
+        <div class="contact-info-row">
+          <div class="icon-tile"><svg class="ic"><use href="#i-phone"/></svg></div>
+          <div><div class="label">Phone</div><div class="value">+92 325 2268373</div></div>
+        </div>
+        <div class="contact-info-row">
+          <div class="icon-tile"><svg class="ic"><use href="#i-linkedin"/></svg></div>
+          <div><div class="label">LinkedIn</div><div class="value">linkedin.com/in/itz-mubashir1009</div></div>
+        </div>
+        <div class="contact-info-row">
+          <div class="icon-tile"><svg class="ic"><use href="#i-github"/></svg></div>
+          <div><div class="label">GitHub</div><div class="value">github.com/MubashirSikander</div></div>
+        </div>
+        <div class="contact-info-row">
+          <div class="icon-tile"><svg class="ic"><use href="#i-pin"/></svg></div>
+          <div><div class="label">Location</div><div class="value">Rahim Yar Khan, Pakistan</div></div>
+        </div>
+      </div>
+
+      <div class="contact-findme" data-reveal>
+        <div class="heading">Find me on</div>
+        <div class="row gap14">
+          <a class="glass social-lg" href="https://www.linkedin.com/in/itz-mubashir1009" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic"><use href="#i-linkedin"/></svg></a>
+          <a class="glass social-lg" href="https://github.com/MubashirSikander" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ic"><use href="#i-github"/></svg></a>
+          <a class="glass social-lg" href="mailto:muhammad.mubashir.sikander@gmail.com" aria-label="Email"><svg class="ic"><use href="#i-mail"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card contact-form-card" data-reveal>
+      <h3>Send a Message</h3>
+      <p class="sub">I typically reply within 24 hours.</p>
+
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="cf-name">Full Name</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" required>
+            <span class="error-msg" id="cf-name-error"></span>
+          </div>
+          <div class="field">
+            <label for="cf-email">Email Address</label>
+            <input type="email" id="cf-email" name="email" autocomplete="email" required>
+            <span class="error-msg" id="cf-email-error"></span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" name="subject" required>
+          <span class="error-msg" id="cf-subject-error"></span>
+        </div>
+        <div class="field">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" required></textarea>
+          <span class="error-msg" id="cf-message-error"></span>
+        </div>
+        <div class="form-footer">
+          <span class="form-privacy"><svg class="ic"><use href="#i-shield"/></svg>Your info stays private</span>
+          <button type="submit" class="btn btn-primary">Send Message <svg class="ic"><use href="#i-send"/></svg></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="map-placeholder" data-reveal>
+    <div class="icon-tile" style="width:56px;height:56px;color:var(--accent);"><svg class="ic" style="width:26px;height:26px;"><use href="#i-pin"/></svg></div>
+    <div class="title">Rahim Yar Khan, Pakistan</div>
+    <div class="sub">Interactive map will be embedded here</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="site-footer">
+  <svg class="footer-wave" viewBox="0 0 1920 140" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,80 C 320,140 640,20 960,60 C 1280,100 1600,20 1920,70 L1920,0 L0,0 Z" fill="var(--bg)"/>
+    <path d="M0,90 C 320,150 640,30 960,70 C 1280,110 1600,30 1920,80" fill="none" stroke="url(#footerGrad)" stroke-width="2" opacity="0.6"/>
+    <defs><linearGradient id="footerGrad" x1="0" y1="0" x2="1920" y2="0"><stop offset="0" stop-color="#22C55E"/><stop offset="1" stop-color="#EAB308"/></linearGradient></defs>
+  </svg>
+  <div class="glow glow-violet" style="width:700px;height:700px;bottom:-380px;left:40%;opacity:.3;" aria-hidden="true"></div>
+
+  <div class="footer-columns">
+    <div class="footer-brand">
+      <a class="nav-logo" href="#home"><span class="nav-logo-mark" aria-hidden="true">MS</span>Hafiz Mubashir Sikander</a>
+      <p>Flutter Developer building scalable and user-focused mobile applications with Flutter. Passionate about clean UI, performance, and delivering reliable Android and iOS experiences.</p>
+      <div class="footer-meta">
+        <span><svg class="ic" style="width:14px;height:14px;display:inline;vertical-align:-2px;"><use href="#i-briefcase"/></svg> Virtuenetz</span>
+        <span><svg class="ic" style="width:14px;height:14px;display:inline;vertical-align:-2px;"><use href="#i-pin"/></svg> Rahim Yar Khan, Pakistan</span>
+      </div>
+      <div class="footer-social">
+        <a class="glass" href="https://www.linkedin.com/in/itz-mubashir1009" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic"><use href="#i-linkedin"/></svg></a>
+        <a class="glass" href="https://github.com/MubashirSikander" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ic"><use href="#i-github"/></svg></a>
+        <a class="glass" href="mailto:muhammad.mubashir.sikander@gmail.com" aria-label="Email"><svg class="ic"><use href="#i-mail"/></svg></a>
+      </div>
+    </div>
+
+    <nav aria-label="Footer quick links">
+      <div class="footer-heading">Quick Links</div>
+      <div class="footer-links">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div>
+      <div class="footer-heading">Technologies</div>
+      <div class="footer-tech">
+        <span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Firebase</span><span class="chip">REST API</span>
+        <span class="chip">GetX</span><span class="chip">Riverpod</span><span class="chip">Hive</span><span class="chip">SQLite</span>
+        <span class="chip">MySQL</span><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Android</span>
+        <span class="chip">iOS</span><span class="chip">Clean Architecture</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-heading">Get in touch</div>
+      <div class="footer-contact-row"><svg class="ic"><use href="#i-mail"/></svg>muhammad.mubashir.sikander@gmail.com</div>
+      <div class="footer-contact-row"><svg class="ic"><use href="#i-phone"/></svg>+92 325 2268373</div>
+      <div class="footer-contact-row"><svg class="ic"><use href="#i-pin"/></svg>Rahim Yar Khan, Pakistan</div>
+      <div class="pill footer-status-pill"><span class="status-dot" aria-hidden="true" style="width:7px;height:7px;border-radius:50%;background:var(--success);box-shadow:0 0 8px var(--success);"></span>Open to Flutter Developer opportunities</div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="fine">© 2026 Mubashir Sikander. All Rights Reserved.</div>
+    <div class="row gap24">
+      <div class="fine">Built with Flutter and attention to detail.</div>
+      <a class="glass back-top" href="#home" id="backToTop" aria-label="Back to top"><svg class="ic"><use href="#i-arrowUp"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <span class="icon-tile"><svg class="ic"><use href="#i-checkc"/></svg></span>
+  <span id="toastMessage">Message sent successfully.</span>
+</div>
+
+<script type="module" src="assets/js/main.js"></script>
+<script>
+  // Last-resort fallback, deliberately NOT type="module": guarantees the page
+  // is never stuck invisible even if assets/js/main.js fails to execute at all
+  // (e.g. the ES module is blocked by the browser's CORS policy when this file
+  // is opened directly via file:// instead of served over http/https). The
+  // in-module safety nets in reveal.js/counters.js can't help in that case
+  // since they never run either — this classic script always does.
+  setTimeout(function(){
+    document.documentElement.classList.add('js');
+    document.querySelectorAll('[data-reveal]').forEach(function(el){
+      el.classList.add('is-visible');
+    });
+    document.querySelectorAll('[data-count-to]').forEach(function(el){
+      if (el.textContent.trim() === '0'){
+        var to = parseInt(el.getAttribute('data-count-to'), 10) || 0;
+        var suffix = el.getAttribute('data-count-suffix') || '';
+        el.textContent = to + suffix;
+      }
+    });
+  }, 3000);
+</script>
 </body>
 </html>

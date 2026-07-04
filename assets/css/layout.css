@@ -1,0 +1,62 @@
+/* ============================================================
+   LAYOUT — page shell, background canvas, section containers
+   ============================================================ */
+.page-shell{ position:relative; overflow-x:clip; background:var(--bg); }
+
+/* decorative background: fixed grid + blurred glow blobs, aria-hidden */
+.bg-canvas{ position:fixed; inset:0; z-index:0; overflow:hidden; pointer-events:none; }
+.bg-grid{
+  position:absolute; inset:0;
+  background-image:
+    linear-gradient(rgba(132,204,22,0.06) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(132,204,22,0.06) 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(ellipse 90% 60% at 50% 0%,#000 40%,transparent 100%);
+}
+.glow{ position:absolute; border-radius:50%; filter:blur(120px); opacity:.55; will-change:transform; }
+.glow-blue{ background:#15803d; width:820px; height:820px; top:-320px; left:-180px; }
+.glow-violet{ background:#a16207; width:760px; height:760px; top:120px; right:-260px; }
+.glow-cyan{ background:#4d7c0f; }
+
+section{ position:relative; z-index:1; }
+
+.section{
+  padding: var(--section-pad-y) var(--section-pad-x);
+  max-width: var(--container-max);
+  margin-inline:auto;
+}
+.section-tight{
+  padding: var(--section-pad-y-tight) var(--section-pad-x);
+  max-width: var(--container-max);
+  margin-inline:auto;
+}
+
+.section-head{
+  display:flex; align-items:flex-end; justify-content:space-between;
+  gap:32px; margin-bottom:56px; flex-wrap:wrap;
+}
+.section-head.centered{ flex-direction:column; align-items:center; text-align:center; }
+
+.section-sub{
+  margin-top:20px; font-size:clamp(1rem,1.6vw,1.19rem); line-height:1.7;
+  color:var(--text-soft); max-width:640px;
+}
+
+.eyebrow{
+  display:inline-flex; align-items:center; gap:10px;
+  font-size:13px; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--accent);
+  background:rgba(34,197,94,0.1);
+  border:1px solid rgba(34,197,94,0.3);
+  padding:8px 18px 8px 14px; border-radius:var(--r-pill);
+  margin-bottom:24px;
+}
+.eyebrow .dot{ width:6px; height:6px; border-radius:50%; background:var(--accent); box-shadow:0 0 12px 2px var(--accent); }
+
+.divider{ height:1px; background:linear-gradient(90deg,transparent,rgba(255,255,255,.14),transparent); }
+
+/* generic responsive grid helpers */
+.grid{ display:grid; gap:32px; }
+.grid-2{ grid-template-columns:repeat(2,1fr); }
+.grid-3{ grid-template-columns:repeat(3,1fr); }
+.grid-4{ grid-template-columns:repeat(4,1fr); }
